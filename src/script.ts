@@ -57,3 +57,16 @@ const person = {
 person.name = "Doe";    // This is allowed because we are assigning a string to a string property.
 
 //---------------------------
+
+// Types explicit
+// Variable
+let age: number;
+let name10: string;
+let isStudent: boolean;
+let hobbies: string[];    // Array of strings
+let personDetails: { name: string; age: number };    // Object with specific properties
+
+// Function
+function greet(name: string): string {
+    return `Hello, ${name}!`;
+}
