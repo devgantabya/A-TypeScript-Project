@@ -79,3 +79,14 @@ let data: number | string | boolean;    // data can be a number, string, or bool
 let myArr: (number | string)[];    // myArr can contain either numbers or strings
 let myFunction: (a: number | string) => void;    // myFunction can accept either a number or a string as an argument and returns void
 
+
+// Dynamic types (any)
+// we should avoid using any type as it defeats the purpose of using TypeScript, which is to have type safety. However, if we need to use dynamic types, we can use the any type.
+
+let g: any;  // or let g;
+let hObj: any = { name: "John", age: 30 };
+let myFunc: any = function (a: any): any {
+    return a;
+}
+
+
