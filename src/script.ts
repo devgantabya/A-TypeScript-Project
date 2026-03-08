@@ -59,7 +59,7 @@ person.name = "Doe";    // This is allowed because we are assigning a string to 
 //---------------------------
 
 // Types explicit
-// Variable
+
 let age: number;
 let name10: string;
 let isStudent: boolean;
@@ -70,3 +70,12 @@ let personDetails: { name: string; age: number };    // Object with specific pro
 function greet(name: string): string {
     return `Hello, ${name}!`;
 }
+
+
+
+// Union types
+let score: number | string;    // score can be either a number or a string
+let data: number | string | boolean;    // data can be a number, string, or boolean
+let myArr: (number | string)[];    // myArr can contain either numbers or strings
+let myFunction: (a: number | string) => void;    // myFunction can accept either a number or a string as an argument and returns void
+
