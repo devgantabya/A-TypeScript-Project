@@ -90,3 +90,14 @@ let myFunc: any = function (a: any): any {
 }
 
 
+// Function Type
+let myFunc: Function;
+
+myFunc = (a: number, b: number, c?: string) => {
+console.log(a * b);
+}
+
+myFunc(4, 2);
+
+
+

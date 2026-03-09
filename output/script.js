@@ -40,3 +40,32 @@ const person = {
 // person.name = 25;    // This will cause an error because we are trying to assign a number to a string property.
 person.name = "Doe"; // This is allowed because we are assigning a string to a string property.
 //---------------------------
+// Types explicit
+let age;
+let name10;
+let isStudent;
+let hobbies; // Array of strings
+let personDetails; // Object with specific properties
+// Function
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+// Union types
+let score; // score can be either a number or a string
+let data; // data can be a number, string, or boolean
+let myArr; // myArr can contain either numbers or strings
+let myFunction; // myFunction can accept either a number or a string as an argument and returns void
+// Dynamic types (any)
+// we should avoid using any type as it defeats the purpose of using TypeScript, which is to have type safety. However, if we need to use dynamic types, we can use the any type.
+let g; // or let g;
+let hObj = { name: "John", age: 30 };
+let myFunc = function (a) {
+    return a;
+};
+// Function Type
+let myFunc;
+myFunc = (a, b, c) => {
+    console.log(a * b);
+    return c;
+};
+myFunc(4, 2);
