@@ -99,5 +99,33 @@ console.log(a * b);
 
 myFunc(4, 2);
 
+// Type aliases
+// Problem
+// const userDetails= (
+//     id: string | number,
+//     user: { name: string, age: number}
+// )=>{
+//     console.log(`User id is ${id} , user name is ${user.name}, and user age is ${user.age}`)
+// };
+
+// const sayHello = (user: {name: string, age: number})=>{
+//     console.log(`Hello ${user.age > 50 ? "Sir" : "No"} ${user.name}`)
+// }
+
+// Solutions
+
+type stringOrNum = string | number;
+type userType = {name: string, age: number};
+
+const userDetails= ( id: stringOrNum, user: userType ) => {
+    console.log(`User id is ${id} , user name is ${user.name}, and user age is ${user.age}`)
+};
+
+const sayHello = (user: userType)=>{
+    console.log(`Hello ${user.age > 50 ? "Sir" : "No"} ${user.name}`)
+}
+
+
+
 
 
