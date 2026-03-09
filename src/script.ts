@@ -126,6 +126,23 @@ const sayHello = (user: userType)=>{
 }
 
 
+// function signature
+let myFuncSignature: (x: number, y: number) => number;
+
+myFuncSignature = (a: number, b: number) => {
+    return a + b;
+}
+
+myFuncSignature(5, 8);
+
+
+let add: (a: number, b:number) => number = (a,b) => {
+    return a + b;
+}
+
+add(8, 2);
+
+
 
 
 
